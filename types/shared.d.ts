@@ -1,6 +1,5 @@
 // types shared between server and client
 import type { UseDarkOptions } from '@vueuse/core'
-import type { SSRContext } from 'vue/server-renderer'
 export type { DefaultTheme } from './default-theme.js'
 
 export type Awaitable<T> = T | PromiseLike<T>
@@ -140,8 +139,9 @@ export interface PageDataPayload {
   pageData: PageData
 }
 
-export interface SSGContext extends SSRContext {
+export interface SSGContext {
   content: string
+  teleports?: Record<string, string>
 }
 
 export interface LocaleSpecificConfig<ThemeConfig = any> {

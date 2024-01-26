@@ -27,14 +27,16 @@ function focusOnTargetAnchor({ target }: Event) {
 </script>
 
 <template>
-  <span ref="backToTop" tabindex="-1" />
-  <a
-    href="#VPContent"
-    class="VPSkipLink visually-hidden"
-    @click="focusOnTargetAnchor"
-  >
-    Skip to content
-  </a>
+  <span>
+    <span ref="backToTop" tabindex="-1" />
+    <a
+        href="#VPContent"
+        class="VPSkipLink visually-hidden"
+        @click="focusOnTargetAnchor"
+    >
+      Skip to content
+    </a>
+  </span>
 </template>
 
 <style scoped>

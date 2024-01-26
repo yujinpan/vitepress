@@ -96,6 +96,7 @@
     "@docsearch/js": "^3.5.2",
     "@types/markdown-it": "^13.0.7",
     "@vitejs/plugin-vue": "^5.0.3",
+    "@vitejs/plugin-vue2": "^2.3.1",
     "@vue/devtools-api": "^6.5.1",
     "@vueuse/core": "^10.7.2",
     "@vueuse/integrations": "^10.7.2",
@@ -106,7 +107,9 @@
     "shikiji-core": "^0.9.19",
     "shikiji-transformers": "^0.9.19",
     "vite": "^5.0.11",
-    "vue": "^3.4.14"
+    "vue": "^2.7.16",
+    "vue-demi": "^0.14.6",
+    "vue-server-renderer": "^2.7.16"
   },
   "peerDependencies": {
     "markdown-it-mathjax3": "^4.3.2",

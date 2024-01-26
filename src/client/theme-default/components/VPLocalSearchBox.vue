@@ -25,7 +25,7 @@ import {
   watch,
   watchEffect,
   type Ref
-} from 'vue'
+} from 'vue-demi'
 import type { ModalTranslations } from '../../../../types/local-search'
 import { pathToFile } from '../../app/utils'
 import { escapeRegExp } from '../../shared'
@@ -182,7 +182,7 @@ debouncedWatch(
         // Silence warnings about missing components
         app.config.warnHandler = () => {}
         app.provide(dataSymbol, vitePressData)
-        Object.defineProperties(app.config.globalProperties, {
+        Object.defineProperties(app, {
           $frontmatter: {
             get() {
               return vitePressData.frontmatter.value

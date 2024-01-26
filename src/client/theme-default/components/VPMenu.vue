@@ -10,10 +10,10 @@ defineProps<{
 <template>
   <div class="VPMenu">
     <div v-if="items" class="items">
-      <template v-for="item in items" :key="item.text">
+      <span v-for="item in items" :key="item.text">
         <VPMenuLink v-if="'link' in item" :item="item" />
         <VPMenuGroup v-else :text="item.text" :items="item.items" />
-      </template>
+      </span>
     </div>
 
     <slot />

@@ -4,22 +4,24 @@ const showModal = ref(false)
 </script>
 
 <template>
-  <button class="modal-button" @click="showModal = true">Show Modal</button>
+  <span>
+    <button class="modal-button" @click="showModal = true">Show Modal</button>
 
-  <Teleport to="body">
-    <Transition name="modal">
-      <div v-show="showModal" class="modal-mask">
-        <div class="modal-container">
-          <p>Hello from the modal!</p>
-          <div class="model-footer">
-            <button class="modal-button" @click="showModal = false">
-              Close
-            </button>
+    <Teleport to="body">
+      <Transition name="modal">
+        <div v-show="showModal" class="modal-mask">
+          <div class="modal-container">
+            <p>Hello from the modal!</p>
+            <div class="model-footer">
+              <button class="modal-button" @click="showModal = false">
+                Close
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </Transition>
-  </Teleport>
+      </Transition>
+    </Teleport>
+  </span>
 </template>
 
 <style scoped>

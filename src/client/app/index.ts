@@ -1,15 +1,15 @@
 import RawTheme from '@theme/index'
 import {
   createApp as createClientApp,
-  createSSRApp,
   defineComponent,
   h,
   onMounted,
   watchEffect,
   type App
-} from 'vue'
+} from 'vue-demi'
 import { ClientOnly } from './components/ClientOnly'
 import { Content } from './components/Content'
+import { Teleport } from './components/Teleport'
 import { useCodeGroups } from './composables/codeGroups'
 import { useCopyCode } from './composables/copyCode'
 import { useUpdateHead } from './composables/head'
@@ -67,6 +67,7 @@ export async function createApp() {
   const router = newRouter()
 
   const app = newApp()
+  app.config.ignoredElements = ['mjx-container', 'mjx-assistive-mml']
 
   app.provide(RouterSymbol, router)
 
@@ -76,9 +77,10 @@ export async function createApp() {
   // install global components
   app.component('Content', Content)
   app.component('ClientOnly', ClientOnly)
+  app.component('Teleport', Teleport)
 
   // expose $frontmatter & $params
-  Object.defineProperties(app.config.globalProperties, {
+  Object.defineProperties(app, {
     $frontmatter: {
       get() {
         return data.frontmatter.value
@@ -110,9 +112,10 @@ export async function createApp() {
 }
 
 function newApp(): App {
+  const rootApp = { render: () => h(VitePressApp) }
   return import.meta.env.PROD
-    ? createSSRApp(VitePressApp)
-    : createClientApp(VitePressApp)
+    ? createClientApp(rootApp)
+    : createClientApp(rootApp)
 }
 
 function newRouter(): Router {

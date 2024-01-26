@@ -1,4 +1,4 @@
-import { defineComponent, h } from 'vue'
+import { defineComponent, h, computed } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import { contentUpdatedCallbacks } from '../utils'
 
@@ -12,16 +12,29 @@ export const Content = defineComponent({
   setup(props) {
     const route = useRoute()
     const { site } = useData()
+
+    // fix warn: name includes '/'
+    const component = computed(() => {
+      const component = route.component
+      if (component?.name) {
+        // @ts-ignore
+        component.name = component.name?.replace('/', '-')
+      }
+      return component
+    })
+
     return () =>
       h(
         props.as,
         site.value.contentProps ?? { style: { position: 'relative' } },
         [
-          route.component
-            ? h(route.component, {
-                onVnodeMounted: runCbs,
-                onVnodeUpdated: runCbs,
-                onVnodeUnmounted: runCbs
+          component.value
+            ? h(component.value, {
+                on: {
+                  'hook:mounted': runCbs,
+                  'hook:updated': runCbs,
+                  'hook:unmounted': runCbs
+                }
               })
             : '404 Page Not Found'
         ]

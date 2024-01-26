@@ -1,17 +1,24 @@
-<script setup lang="ts">
+<script lang="ts">
 import type { DefaultTheme } from 'vitepress/theme'
 import { withBase } from 'vitepress'
+import { defineComponent, type PropType } from 'vue';
 
-defineProps<{
-  image: DefaultTheme.ThemeableImage
-  alt?: string
-}>()
-
-defineOptions({ inheritAttrs: false })
+export default defineComponent({
+  inheritAttrs: false,
+  props: {
+    image: {} as PropType<DefaultTheme.ThemeableImage>,
+    alt: String as PropType<string>
+  },
+  setup() {
+    return {
+      withBase
+    }
+  }
+})
 </script>
 
 <template>
-  <template v-if="image">
+  <span v-if="image">
     <img
       v-if="typeof image === 'string' || 'src' in image"
       class="VPImage"
@@ -33,7 +40,7 @@ defineOptions({ inheritAttrs: false })
         v-bind="$attrs"
       />
     </template>
-  </template>
+  </span>
 </template>
 
 <style scoped>

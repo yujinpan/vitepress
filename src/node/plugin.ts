@@ -82,11 +82,11 @@ export async function createVitePressPlugin(
 
   let markdownToVue: Awaited<ReturnType<typeof createMarkdownToVueRenderFn>>
   const userCustomElementChecker =
-    userVuePluginOptions?.template?.compilerOptions?.isCustomElement
-  let isCustomElement = userCustomElementChecker
+    userVuePluginOptions?.template?.compilerOptions?.isReservedTag
+  let isReservedTag = userCustomElementChecker
 
   if (markdown?.math) {
-    isCustomElement = (tag) => {
+    isReservedTag = (tag) => {
       if (['mjx-container', 'mjx-assistive-mml'].includes(tag)) {
         return true
       }
@@ -95,7 +95,7 @@ export async function createVitePressPlugin(
   }
 
   // lazy require plugin-vue to respect NODE_ENV in @vue/compiler-x
-  const vuePlugin = await import('@vitejs/plugin-vue').then((r) =>
+  const vuePlugin = await import('@vitejs/plugin-vue2').then((r) =>
     r.default({
       include: [/\.vue$/, /\.md$/],
       ...userVuePluginOptions,
@@ -103,7 +103,7 @@ export async function createVitePressPlugin(
         ...userVuePluginOptions?.template,
         compilerOptions: {
           ...userVuePluginOptions?.template?.compilerOptions,
-          isCustomElement
+          isReservedTag
         }
       }
     })

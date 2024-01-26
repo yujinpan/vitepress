@@ -56,7 +56,7 @@ export function createRouter(
   loadPageModule: (path: string) => Awaitable<PageModule | null>,
   fallbackComponent?: Component
 ): Router {
-  const route = reactive(getDefaultRoute())
+  const route = reactive(getDefaultRoute()) as Route
 
   const router: Router = {
     route,

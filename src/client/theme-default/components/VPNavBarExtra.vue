@@ -23,9 +23,9 @@ const hasExtraContent = computed(
     <div v-if="localeLinks.length && currentLang.label" class="group translations">
       <p class="trans-title">{{ currentLang.label }}</p>
 
-      <template v-for="locale in localeLinks" :key="locale.link">
+      <span v-for="locale in localeLinks" :key="locale.link">
         <VPMenuLink :item="locale" />
-      </template>
+      </span>
     </div>
 
     <div v-if="site.appearance && site.appearance !== 'force-dark'" class="group">

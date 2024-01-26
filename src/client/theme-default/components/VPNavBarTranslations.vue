@@ -19,9 +19,9 @@ const { localeLinks, currentLang } = useLangs({ correspondingLink: true })
     <div class="items">
       <p class="title">{{ currentLang.label }}</p>
 
-      <template v-for="locale in localeLinks" :key="locale.link">
+      <span v-for="locale in localeLinks" :key="locale.link">
         <VPMenuLink :item="locale" />
-      </template>
+      </span>
     </div>
   </VPFlyout>
 </template>

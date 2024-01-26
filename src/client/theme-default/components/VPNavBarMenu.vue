@@ -9,7 +9,7 @@ const { theme } = useData()
 <template>
   <nav v-if="theme.nav" aria-labelledby="main-nav-aria-label" class="VPNavBarMenu">
     <span id="main-nav-aria-label" class="visually-hidden">Main Navigation</span>
-    <template v-for="item in theme.nav" :key="item.text">
+    <template v-for="item in theme.nav">
       <VPNavBarMenuLink v-if="'link' in item" :item="item" />
       <VPNavBarMenuGroup v-else :item="item" />
     </template>

@@ -51,6 +51,7 @@ export interface VitePressData<T = any> {
 
 // site data is a singleton
 export const siteDataRef: Ref<SiteData> = shallowRef(
+  // @ts-ignore
   (import.meta.env.PROD ? siteData : readonly(siteData)) as SiteData
 )
 
