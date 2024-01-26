@@ -144,6 +144,7 @@ const mark = computedAsync(async () => {
 
 const cache = new LRUCache<string, Map<string, string>>(16) // 16 files
 
+// @ts-ignore
 debouncedWatch(
   () => [searchIndex.value, filterText.value, showDetailedList.value] as const,
   async ([index, filterTextValue, showDetailedListValue], old, onCleanup) => {

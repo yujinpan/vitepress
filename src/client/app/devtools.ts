@@ -1,5 +1,5 @@
 import { setupDevtoolsPlugin } from '@vue/devtools-api'
-import type { App } from 'vue'
+import type { App } from 'vue-demi'
 import type { Router } from './router'
 import type { VitePressData } from './data'
 

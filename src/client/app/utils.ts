@@ -5,13 +5,7 @@ import {
   sanitizeFileName,
   type Awaitable
 } from '../shared'
-import {
-  h,
-  onMounted,
-  onUnmounted,
-  shallowRef,
-  type AsyncComponentLoader
-} from 'vue'
+import { h, onMounted, onUnmounted, shallowRef, type Component } from 'vue'
 
 export { inBrowser } from '../shared'
 
@@ -85,6 +79,12 @@ export function onContentUpdated(fn: () => any) {
     contentUpdatedCallbacks = contentUpdatedCallbacks.filter((f) => f !== fn)
   })
 }
+
+export type AsyncComponentResolveResult<T = Component> = T | { default: T } // es modules
+
+export type AsyncComponentLoader<T = any> = () => Promise<
+  AsyncComponentResolveResult<T>
+>
 
 export function defineClientComponent(
   loader: AsyncComponentLoader,

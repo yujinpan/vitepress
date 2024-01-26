@@ -81,7 +81,7 @@ function initialize(userOptions: DefaultTheme.AlgoliaSearchOptions) {
         constructor: undefined,
         key: undefined,
         props: { href: hit.url, children }
-      }
+      } as any
     }
   }) as DocSearchProps
 
