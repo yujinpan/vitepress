@@ -1,5 +1,5 @@
 {
-  "name": "vitepress",
+  "name": "vitepress-v2",
   "version": "1.0.0-rc.39",
   "description": "Vite & Vue powered static site generator",
   "type": "module",
