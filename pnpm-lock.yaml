@@ -16,9 +16,6 @@ importers:
       '@types/markdown-it':
         specifier: ^13.0.7
         version: 13.0.7
-      '@vitejs/plugin-vue':
-        specifier: ^5.0.3
-        version: 5.0.3(vite@5.0.11)(vue@2.7.16)
       '@vitejs/plugin-vue2':
         specifier: ^2.3.1
         version: 2.3.1(vite@5.0.11)(vue@2.7.16)
@@ -53,13 +50,13 @@ importers:
         specifier: ^5.0.11
         version: 5.0.11(@types/node@20.11.2)
       vue:
-        specifier: ^2.7.16
+        specifier: ^2.7.0
         version: 2.7.16
       vue-demi:
         specifier: ^0.14.6
         version: 0.14.6(vue@2.7.16)
       vue-server-renderer:
-        specifier: ^2.7.16
+        specifier: ^2.7.0
         version: 2.7.16
     devDependencies:
       '@clack/prompts':
@@ -1343,17 +1340,6 @@ packages:
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0
       vue: ^2.7.0-0
-    dependencies:
-      vite: 5.0.11(@types/node@20.11.2)
-      vue: 2.7.16
-    dev: false
-
-  /@vitejs/plugin-vue@5.0.3(vite@5.0.11)(vue@2.7.16):
-    resolution: {integrity: sha512-b8S5dVS40rgHdDrw+DQi/xOM9ed+kSRZzfm1T74bMmBDCd8XO87NKlFYInzCtwvtWwXZvo1QxE2OSspTATWrbA==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    peerDependencies:
-      vite: ^5.0.0
-      vue: ^3.2.25
     dependencies:
       vite: 5.0.11(@types/node@20.11.2)
       vue: 2.7.16
