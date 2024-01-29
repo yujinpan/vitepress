@@ -1,4 +1,4 @@
-import type { Options as VuePluginOptions } from '@vitejs/plugin-vue'
+import type { Options as VuePluginOptions } from '@vitejs/plugin-vue2'
 import type { UseDarkOptions } from '@vueuse/core'
 import type { SitemapStreamOptions } from 'sitemap'
 import type { Logger, UserConfig as ViteConfig } from 'vite'

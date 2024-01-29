@@ -1,7 +1,7 @@
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { defineConfig } from 'vitest/config'
-import vue from '@vitejs/plugin-vue'
+import vue from '@vitejs/plugin-vue2'
 
 const dir = dirname(fileURLToPath(import.meta.url))
 
