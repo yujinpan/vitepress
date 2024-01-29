@@ -44,7 +44,7 @@ const classes = computed(() => [
 ])
 
 function onItemInteraction(e: MouseEvent | Event) {
-  if ('key' in e && e.key !== 'Enter') {
+  if ('key' in e && e['key'] !== 'Enter') {
     return
   }
   !props.item.link && toggle()

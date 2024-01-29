@@ -6,7 +6,8 @@ import path from 'path'
 import { packageDirectorySync } from 'pkg-dir'
 import { rimraf } from 'rimraf'
 import { pathToFileURL } from 'url'
-import type { BuildOptions, Rollup } from 'vite'
+import type { BuildOptions } from 'vite'
+import type Rollup from 'rollup'
 import { resolveConfig, type SiteConfig } from '../config'
 import { clearCache } from '../markdownToVue'
 import { slash, type HeadConfig } from '../shared'
@@ -87,7 +88,9 @@ export async function build(
           (chunk) =>
             chunk.type === 'chunk' &&
             chunk.name === 'theme' &&
-            chunk.moduleIds.some((id) => id.includes('client/theme-default'))
+            Object.keys(chunk.modules).some((id) =>
+              id.includes('client/theme-default')
+            )
         )
 
       const metadataScript = generateMetadataScript(pageToHashMap, siteConfig)

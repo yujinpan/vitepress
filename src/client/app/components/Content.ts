@@ -2,7 +2,7 @@ import { defineComponent, h, computed } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import { contentUpdatedCallbacks } from '../utils'
 
-const runCbs = () => contentUpdatedCallbacks.forEach((fn) => fn())
+const runCbs = () => contentUpdatedCallbacks.forEach((fn: Function) => fn())
 
 export const Content = defineComponent({
   name: 'VitePressContent',

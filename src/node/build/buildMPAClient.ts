@@ -1,4 +1,5 @@
-import { build, type Rollup } from 'vite'
+import { build } from 'vite'
+import Rollup from 'rollup'
 import type { SiteConfig } from '..'
 
 const virtualEntry = 'client.js'

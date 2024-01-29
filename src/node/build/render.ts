@@ -3,7 +3,8 @@ import escape from 'escape-html'
 import fs from 'fs-extra'
 import path from 'path'
 import { pathToFileURL } from 'url'
-import { normalizePath, transformWithEsbuild, type Rollup } from 'vite'
+import { normalizePath, transformWithEsbuild } from 'vite'
+import type Rollup from 'rollup'
 import type { SiteConfig } from '../config'
 import {
   EXTERNAL_URL_RE,

@@ -6,9 +6,9 @@ import {
   type ModuleNode,
   type Plugin,
   type ResolvedConfig,
-  type Rollup,
   type UserConfig
 } from 'vite'
+import type Rollup from 'rollup'
 import {
   APP_PATH,
   DIST_CLIENT_PATH,
@@ -354,10 +354,10 @@ export async function createVitePressPlugin(
             bundle[name + '-lean'] = {
               ...chunk,
               fileName: chunk.fileName.replace(/\.js$/, '.lean.js'),
-              preliminaryFileName: chunk.preliminaryFileName.replace(
-                /\.js$/,
-                '.lean.js'
-              ),
+              // preliminaryFileName: chunk.preliminaryFileName.replace(
+              //   /\.js$/,
+              //   '.lean.js'
+              // ),
               code: chunk.code.replace(staticStripRE, `""`)
             }
 

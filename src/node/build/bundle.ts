@@ -5,9 +5,9 @@ import {
   build,
   normalizePath,
   type BuildOptions,
-  type Rollup,
   type InlineConfig as ViteInlineConfig
 } from 'vite'
+import type Rollup from 'rollup'
 import { APP_PATH } from '../alias'
 import type { SiteConfig } from '../config'
 import { createVitePressPlugin } from '../plugin'
@@ -87,7 +87,7 @@ export async function bundle(
       ...options,
       emptyOutDir: true,
       ssr,
-      ssrEmitAssets: config.mpa,
+      // ssrEmitAssets: config.mpa,
       // minify with esbuild in MPA mode (for CSS)
       minify: ssr
         ? config.mpa
