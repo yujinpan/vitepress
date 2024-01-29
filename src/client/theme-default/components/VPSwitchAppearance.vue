@@ -23,7 +23,7 @@ const switchTitle = computed(() => {
     :title="switchTitle"
     class="VPSwitchAppearance"
     :aria-checked="isDark"
-    @click="toggleAppearance"
+    @click.native="toggleAppearance"
   >
     <VPIconSun class="sun" />
     <VPIconMoon class="moon" />

@@ -1,4 +1,8 @@
-# [4.0.0-rc.0](https://github.com/yujinpan/vitepress/compare/v5.0.0-rc.0...v4.0.0-rc.0) (2024-01-29)
+# [5.0.0-rc.1](https://github.com/yujinpan/vitepress/compare/v5.0.0-rc.0...v5.0.0-rc.1) (2024-01-29)
+
+### Bug Fixes
+
+- native event needs modify `.native` ([badd1c5](https://github.com/yujinpan/vitepress/commit/badd1c5c9d56cc3a1f525a9adb265f4fe6aa1e3e))
 
 # 5.0.0-rc.0 (2024-01-29)
 
