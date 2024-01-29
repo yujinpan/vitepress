@@ -297,20 +297,20 @@ importers:
   __tests__/e2e:
     devDependencies:
       vitepress:
-        specifier: workspace:*
+        specifier: workspace:vitepress-v2@*
         version: link:../..
 
   __tests__/init:
     devDependencies:
       vitepress:
-        specifier: workspace:*
+        specifier: workspace:vitepress-v2@*
         version: link:../..
 
   docs:
     devDependencies:
       '@lunariajs/core':
         specifier: npm:@brc-dd/lunaria-core@latest
-        version: /@brc-dd/lunaria-core@0.0.25-dev.7838358(supports-color@9.4.0)
+        version: /@brc-dd/lunaria-core@0.0.28-dev.549ef9b(supports-color@9.4.0)
       markdown-it-mathjax3:
         specifier: ^4.3.2
         version: 4.3.2
@@ -318,7 +318,7 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
       vitepress:
-        specifier: workspace:*
+        specifier: workspace:vitepress-v2@*
         version: link:..
 
 packages:
@@ -504,13 +504,14 @@ packages:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
 
-  /@brc-dd/lunaria-core@0.0.25-dev.7838358(supports-color@9.4.0):
-    resolution: {integrity: sha512-hzERgK/7KGMe2Y++j2mn2M+C/LK5Ck7e83LId0vA/2VV6sX+nhQRXOOYWeGXSFvtKchgk3xw7VvX+m8QjKwHWw==}
+  /@brc-dd/lunaria-core@0.0.28-dev.549ef9b(supports-color@9.4.0):
+    resolution: {integrity: sha512-rwY08iXG0fxPjD61MOa5CzYk7A9I33gZllrXfmkcS10+UhC+V1F1tMpF59VYv9GTEnRZlY+DNt7s+x9vSp4qBQ==}
     engines: {node: '>=18.17.0'}
     hasBin: true
     dependencies:
       '@clack/core': 0.3.3
       fast-glob: 3.3.2
+      get-port: 7.0.0
       jiti: 1.21.0
       micromatch: 4.0.5
       path-to-regexp: 6.2.1

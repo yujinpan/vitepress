@@ -34,7 +34,7 @@ provide('hero-image-slot-exists', heroImageSlotExists)
   <div v-if="frontmatter.layout !== false" class="Layout" :class="frontmatter.pageClass" >
     <slot name="layout-top" />
     <VPSkipLink />
-    <VPBackdrop class="backdrop" :show="isSidebarOpen" @click="closeSidebar" />
+    <VPBackdrop class="backdrop" :show="isSidebarOpen" @click.native="closeSidebar" />
     <VPNav>
       <template #nav-bar-title-before><slot name="nav-bar-title-before" /></template>
       <template #nav-bar-title-after><slot name="nav-bar-title-after" /></template>

@@ -138,7 +138,7 @@ const provider = __ALGOLIA__ ? 'algolia' : __VP_LOCAL_SEARCH__ ? 'local' : ''
       />
 
       <div id="local-search">
-        <VPNavBarSearchButton @click="showSearch = true" />
+        <VPNavBarSearchButton @click.native="showSearch = true" />
       </div>
     </template>
 
@@ -150,7 +150,7 @@ const provider = __ALGOLIA__ ? 'algolia' : __VP_LOCAL_SEARCH__ ? 'local' : ''
       />
 
       <div v-if="!actuallyLoaded" id="docsearch">
-        <VPNavBarSearchButton @click="load" />
+        <VPNavBarSearchButton @click.native="load" />
       </div>
     </template>
   </div>
