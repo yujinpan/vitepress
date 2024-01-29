@@ -16,7 +16,7 @@ const closeScreen = inject('close-screen') as () => void
     :href="item.link"
     :target="item.target"
     :rel="item.rel"
-    @click="closeScreen"
+    @click.native="closeScreen"
   >
     {{ item.text }}
   </VPLink>
