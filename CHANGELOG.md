@@ -1,3 +1,5 @@
+# [3.0.0-rc.0](https://github.com/yujinpan/vitepress/compare/v5.0.0-rc.0...v3.0.0-rc.0) (2024-01-29)
+
 # 5.0.0-rc.0 (2024-01-29)
 
 ### Features
