@@ -1,3 +1,15 @@
+# 5.0.0-rc.0 (2024-01-29)
+
+### Features
+
+Change the required library `vue` to 2.7.0.
+
+Vite & Vitepress-v2 support version.
+
+- `vite@5` => `vitepress-v2@5`
+- `vite@4` => `vitepress-v2@4`
+- `vite@3` => `vitepress-v2@3`
+
 # [1.0.0-rc.39](https://github.com/vuejs/vitepress/compare/v1.0.0-rc.38...v1.0.0-rc.39) (2024-01-16)
 
 ### Bug Fixes
