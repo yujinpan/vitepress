@@ -1,3 +1,11 @@
+# [3.0.0-rc.2](https://github.com/yujinpan/vitepress/compare/v3.0.0-rc.1...v3.0.0-rc.2) (2024-02-02)
+
+### Bug Fixes
+
+- `__VUE_PROD_DEVTOOLS__` is undefined when build ([dd36ee8](https://github.com/yujinpan/vitepress/commit/dd36ee8a211b364b53ba10a37100e937d7b3d222))
+- link vue path is error ([5fac501](https://github.com/yujinpan/vitepress/commit/5fac501648ccbc6054ef439ab882166076fb77d3))
+- ssr render parameter type error ([eb15185](https://github.com/yujinpan/vitepress/commit/eb15185b8de8445b28bdb1eae85191e507d6e97c))
+
 # [3.0.0-rc.1](https://github.com/yujinpan/vitepress/compare/v5.0.0-rc.1...v3.0.0-rc.1) (2024-01-29)
 
 # [3.0.0-rc.0](https://github.com/yujinpan/vitepress/compare/v5.0.0-rc.0...v3.0.0-rc.0) (2024-01-29)
