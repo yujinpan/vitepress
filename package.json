@@ -1,6 +1,6 @@
 {
   "name": "vitepress-v2",
-  "version": "5.0.0-rc.1",
+  "version": "5.0.0-rc.2",
   "description": "VitePress for vue2",
   "type": "module",
   "packageManager": "pnpm@8.14.1",
