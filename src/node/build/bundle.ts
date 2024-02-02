@@ -164,7 +164,12 @@ export async function bundle(
         }
       }
     },
-    configFile: config.vite?.configFile
+    configFile: config.vite?.configFile,
+    define: {
+      // only in @vitejs/plugin-vue
+      // https://vuejs.org/api/compile-time-flags#configuration-guides
+      __VUE_PROD_DEVTOOLS__: false
+    }
   })
 
   let clientResult!: Rollup.RollupOutput | null

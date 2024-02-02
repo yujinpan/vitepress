@@ -156,7 +156,10 @@ function linkVue() {
     const dest = path.resolve(root, 'node_modules/vue')
     // if user did not install vue by themselves, link VitePress' version
     if (!fs.existsSync(dest)) {
-      const src = path.dirname(createRequire(import.meta.url).resolve('vue'))
+      // node_modules/vue/dist/vue.xxx.js => node_modules/vue
+      const src = createRequire(import.meta.url)
+        .resolve('vue')
+        .replace(/node_modules\/vue\/.*/, 'node_modules/vue')
       fs.ensureSymlinkSync(src, dest, 'junction')
       return () => {
         fs.unlinkSync(dest)
