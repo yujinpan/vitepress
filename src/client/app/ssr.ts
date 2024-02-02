@@ -7,6 +7,6 @@ export async function render(path: string) {
   const { app, router } = await createApp()
   await router.go(path)
   const ctx: SSGContext = { content: '' }
-  ctx.content = await createRenderer().renderToString(app as any, ctx)
+  ctx.content = await createRenderer().renderToString(app.mount() as any, ctx)
   return ctx
 }
