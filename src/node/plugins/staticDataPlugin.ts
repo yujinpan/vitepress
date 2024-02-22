@@ -127,15 +127,8 @@ export const staticDataPlugin: Plugin = {
       if (watch) {
         ;(server as any)._importGlobMap.set(
           id,
-          [Array.isArray(watch) ? watch : [watch]].map((globs) => {
-            const affirmed: string[] = []
-            const negated: string[] = []
-
-            for (const glob of globs) {
-              ;(glob[0] === '!' ? negated : affirmed).push(glob)
-            }
-            return { affirmed, negated }
-          })
+          // vite3.0
+          [Array.isArray(watch) ? watch : [watch]]
         )
       }
     }
