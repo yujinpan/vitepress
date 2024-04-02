@@ -1,4 +1,4 @@
-import { setupDevToolsPlugin } from '@vue/devtools-api'
+import { setupDevtoolsPlugin } from '@vue/devtools-api'
 import type { App } from 'vue-demi'
 import type { Router } from './router'
 import type { VitePressData } from './data'
@@ -10,7 +10,7 @@ export const setupDevtools = (
   router: Router,
   data: VitePressData
 ): void => {
-  setupDevToolsPlugin(
+  setupDevtoolsPlugin(
     {
       // fix recursive reference
       app: app as any,

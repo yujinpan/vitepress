@@ -102,7 +102,7 @@
     "@shikijs/transformers": "^1.2.0",
     "@types/markdown-it": "^13.0.7",
     "@vitejs/plugin-vue2": "^2.3.1",
-    "@vue/devtools-api": "^7.0.16",
+    "@vue/devtools-api": "^6.6.1",
     "@vueuse/core": "^10.9.0",
     "@vueuse/integrations": "^10.9.0",
     "focus-trap": "^7.5.4",
