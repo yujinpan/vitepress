@@ -1,3 +1,9 @@
+# [5.0.0](https://github.com/yujinpan/vitepress/compare/v5.0.0-rc.2...v5.0.0) (2024-04-02)
+
+### Bug Fixes
+
+- use library `vue-demi` instead of `vitepress/demi` ([66ed535](https://github.com/yujinpan/vitepress/commit/66ed535fdd5411e367d7ab794564ed6fe2a4b0b8))
+
 # [5.0.0-rc.2](https://github.com/yujinpan/vitepress/compare/v5.0.0-rc.1...v5.0.0-rc.2) (2024-02-02)
 
 ### Bug Fixes
