@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/yujinpan/vitepress/compare/v5.0.0...v3.0.0) (2024-04-03)
+
+### Bug Fixes
+
+- `affirmed` and `negated` is not exist in vite3 ([e4231fe](https://github.com/yujinpan/vitepress/commit/e4231fecc93a57201db26c9edd14c453b2b2ed0d))
+
+# [3.0.0-rc.2](https://github.com/yujinpan/vitepress/compare/v5.0.0-rc.2...v3.0.0-rc.2) (2024-02-02)
+
+# [3.0.0-rc.1](https://github.com/yujinpan/vitepress/compare/v5.0.0-rc.1...v3.0.0-rc.1) (2024-01-29)
+
+# [3.0.0-rc.0](https://github.com/yujinpan/vitepress/compare/v5.0.0-rc.0...v3.0.0-rc.0) (2024-01-29)
+
 # [5.0.0](https://github.com/yujinpan/vitepress/compare/v5.0.0-rc.2...v5.0.0) (2024-04-02)
 
 ### Bug Fixes
