@@ -36,6 +36,9 @@ importers:
       '@vue/devtools-api':
         specifier: ^6.6.1
         version: 6.6.1
+      '@vue/shared':
+        specifier: ^3.4.26
+        version: 3.4.26
       '@vueuse/core':
         specifier: ^10.9.0
         version: 10.9.0(vue@2.7.16)
@@ -1413,7 +1416,7 @@ packages:
     dependencies:
       '@volar/language-core': 2.2.0-alpha.10
       '@vue/compiler-dom': 3.4.21
-      '@vue/shared': 3.4.21
+      '@vue/shared': 3.4.26
       computeds: 0.0.1
       minimatch: 9.0.3
       path-browserify: 1.0.1
@@ -1424,6 +1427,9 @@ packages:
   /@vue/shared@3.4.21:
     resolution: {integrity: sha512-PuJe7vDIi6VYSinuEbUIQgMIRZGgM8e4R+G+/dQTk0X1NEdvgvvgv7m+rfmDH1gZzyA1OjjoWskvHlfRNfQf3g==}
     dev: true
+
+  /@vue/shared@3.4.26:
+    resolution: {integrity: sha512-Fg4zwR0GNnjzodMt3KRy2AWGMKQXByl56+4HjN87soxLNU9P5xcJkstAlIeEF3cU6UYOzmJl1tV0dVPGIljCnQ==}
 
   /@vueuse/core@10.9.0(vue@2.7.16):
     resolution: {integrity: sha512-/1vjTol8SXnx6xewDEKfS0Ra//ncg4Hb0DaZiwKf7drgfMsKFExQ+FnnENcN6efPen+1kIzhLQoGSy0eDUVOMg==}

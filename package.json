@@ -109,6 +109,7 @@
     "@types/markdown-it": "^14.1.1",
     "@vitejs/plugin-vue2": "^2.3.1",
     "@vue/devtools-api": "^6.6.1",
+    "@vue/shared": "^3.4.26",
     "@vueuse/core": "^10.9.0",
     "@vueuse/integrations": "^10.9.0",
     "focus-trap": "^7.5.4",
