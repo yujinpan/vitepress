@@ -1,3 +1,37 @@
+# [5.1.0](https://github.com/yujinpan/vitepress/compare/v5.0.0...v5.1.0) (2024-05-16)
+
+### Bug Fixes
+
+- **build/regression:** markdown backslash escapes not working ([d02d1e9](https://github.com/yujinpan/vitepress/commit/d02d1e923aacdb1e8061a3f76af30e8a13518277)), closes [#3808](https://github.com/yujinpan/vitepress/issues/3808)
+- **build:** show file info on error ([f0debd2](https://github.com/yujinpan/vitepress/commit/f0debd20f48ab7eb58cfd142147531509d6c0209))
+- **client:** don't reload page on hash change ([#3777](https://github.com/yujinpan/vitepress/issues/3777)) ([74b725a](https://github.com/yujinpan/vitepress/commit/74b725a224438ef776fed25ee82274429d94ac83))
+- **dev:** match dev and prod routing behavior ([#3837](https://github.com/yujinpan/vitepress/issues/3837)) ([b360ac8](https://github.com/yujinpan/vitepress/commit/b360ac88df3bfd60e3498cc19066c0c90261ee4f))
+- **dev:** multiple server instances being created when editing config too quickly ([#3835](https://github.com/yujinpan/vitepress/issues/3835)) ([729a890](https://github.com/yujinpan/vitepress/commit/729a890669c363895cfac39ece046926cad36d01))
+- hashchange should only be triggered for same page navigations ([#3768](https://github.com/yujinpan/vitepress/issues/3768)) ([2a9fc2a](https://github.com/yujinpan/vitepress/commit/2a9fc2a26b829bb3f28067ac6f4a41bc1e8b7a1e))
+- let vue compiler handle entity decoding ([f86ac56](https://github.com/yujinpan/vitepress/commit/f86ac56b78da76f3061e6537b897bb13c1ed802d))
+- **markdown:** entities and escapes not working properly ([#3882](https://github.com/yujinpan/vitepress/issues/3882)) ([d5dbd70](https://github.com/yujinpan/vitepress/commit/d5dbd704ceb215ebf3ce9b23deec6e6c90634f0a))
+- render 404 page completely on client to infer locale from browser path ([#3858](https://github.com/yujinpan/vitepress/issues/3858)) ([728cb15](https://github.com/yujinpan/vitepress/commit/728cb15677f4f84b33bed6bb2f70f47600ea1057))
+- **style:** prefer YaHei over DengXian ([f0a37b4](https://github.com/yujinpan/vitepress/commit/f0a37b4b8445ec914700df054c0897721382e5b1))
+- sync updates of markdown-it types ([11f4c9a](https://github.com/yujinpan/vitepress/commit/11f4c9aee36127566b7f09dcd57878c3f6a7da0a))
+- **theme/a11y:** add unique name to footer prev / next navigation landmark ([e60c101](https://github.com/yujinpan/vitepress/commit/e60c101e50fa56d4cd54d434c5628cc7e2231318))
+- **theme/a11y:** remove duplicate assistive text from outline nav [[#3800](https://github.com/yujinpan/vitepress/issues/3800)] ([#3803](https://github.com/yujinpan/vitepress/issues/3803)) ([733d986](https://github.com/yujinpan/vitepress/commit/733d986a84f614484b04235546dc4cda0769e833))
+- **theme/i18n:** 404 page not showing localized text ([#3833](https://github.com/yujinpan/vitepress/issues/3833)) ([cc11b8e](https://github.com/yujinpan/vitepress/commit/cc11b8e41ec481320b03902bdc307d479a8ba838))
+- **theme/regression:** custom font not applying in Chinese docs because of specificity ([fa2f38a](https://github.com/yujinpan/vitepress/commit/fa2f38a0c3bd121dcb7e07420566087c19b10f96)), closes [#3864](https://github.com/yujinpan/vitepress/issues/3864)
+- **theme:** disable keypress effect on search button ([ccc37bb](https://github.com/yujinpan/vitepress/commit/ccc37bb80e4147b9ab91b0f5d7dfae9d51533460))
+- **theme:** don't use Chinese quotes on non-Chinese documents ([#3834](https://github.com/yujinpan/vitepress/issues/3834)) ([75115f4](https://github.com/yujinpan/vitepress/commit/75115f4f8223d67dab2dc82fadaf2941aabf6330))
+- **theme:** external link icon not visible for target \_blank links ([d08eeed](https://github.com/yujinpan/vitepress/commit/d08eeed89726572f7ea341df59864cc72716751c)), closes [#3327](https://github.com/yujinpan/vitepress/issues/3327)
+- **theme:** fix invalid vp-offset in ssr ([9794877](https://github.com/yujinpan/vitepress/commit/9794877347140c7b4955d735cd8867c260a5089d))
+- **theme:** leaking event listener when going back/forward on Safari on iOS ([#3658](https://github.com/yujinpan/vitepress/issues/3658)) ([#3671](https://github.com/yujinpan/vitepress/issues/3671)) ([1a72181](https://github.com/yujinpan/vitepress/commit/1a72181c06d78e5e6f293e3f6abdb15caa4d2f53))
+- **theme:** remove small layout shift on `On this page` button ([#3767](https://github.com/yujinpan/vitepress/issues/3767)) ([5f28e74](https://github.com/yujinpan/vitepress/commit/5f28e74abfc984cdc7e0d9d9f7b7e15cb2b46923))
+
+### Features
+
+- **build/i18n:** support customizing copy code button's tooltip text ([#3854](https://github.com/yujinpan/vitepress/issues/3854)) ([ed6ada7](https://github.com/yujinpan/vitepress/commit/ed6ada7a688c466920f3e0ef33b7176b8eb01eee))
+- **build:** add localeIndex to md.env ([#3862](https://github.com/yujinpan/vitepress/issues/3862)) ([0cbb469](https://github.com/yujinpan/vitepress/commit/0cbb469842d74381ad56d44b7975f34c405b78f8))
+- config file hot update error prints error message ([#3592](https://github.com/yujinpan/vitepress/issues/3592)) ([cd5adf3](https://github.com/yujinpan/vitepress/commit/cd5adf3011d677263c93ce6f8066aaa7870b1dfc))
+- **theme:** update Inter to version 4 ([#3693](https://github.com/yujinpan/vitepress/issues/3693)) ([#3694](https://github.com/yujinpan/vitepress/issues/3694)) ([ffafa31](https://github.com/yujinpan/vitepress/commit/ffafa31b9204f996f4b819684214fa631c224575))
+- upgrade markdown-it types to v14 ([#3772](https://github.com/yujinpan/vitepress/issues/3772)) ([d3dd4bc](https://github.com/yujinpan/vitepress/commit/d3dd4bc93806f3bc7be5f29ad279978b4fd13c81))
+
 ## [1.1.4](https://github.com/vuejs/vitepress/compare/v1.1.3...v1.1.4) (2024-04-27)
 
 ### Bug Fixes
