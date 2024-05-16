@@ -292,11 +292,7 @@ watch(results, (r) => {
 function scrollToSelectedResult() {
   nextTick(() => {
     const selectedEl = document.querySelector('.result.selected')
-    if (selectedEl) {
-      selectedEl.scrollIntoView({
-        block: 'nearest'
-      })
-    }
+    selectedEl?.scrollIntoView({ block: 'nearest' })
   })
 }
 
