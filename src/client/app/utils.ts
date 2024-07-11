@@ -7,7 +7,7 @@ import {
 } from '../shared'
 import { h, onMounted, onUnmounted, shallowRef, type Component } from 'vue'
 
-export { inBrowser } from '../shared'
+export { inBrowser, escapeHtml as _escapeHtml } from '../shared'
 
 /**
  * Join two paths by resolving the slash collision.
