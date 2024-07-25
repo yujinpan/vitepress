@@ -27,13 +27,15 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div
-    v-for="item in items"
-    :key="item.text"
-    class="group"
-    :class="{ 'no-transition': disableTransition }"
-  >
-    <VPSidebarItem :item="item" :depth="0" />
+  <div>
+    <div
+        v-for="item in items"
+        :key="item.text"
+        class="group"
+        :class="{ 'no-transition': disableTransition }"
+    >
+      <VPSidebarItem :item="item" :depth="0" />
+    </div>
   </div>
 </template>
 
