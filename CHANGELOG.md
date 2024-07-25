@@ -1,3 +1,13 @@
+## [5.3.2](https://github.com/yujinpan/vitepress/compare/v5.3.0...v5.3.2) (2024-07-25)
+
+### Bug Fixes
+
+- <template> cannot be keyed in vue2 ([e3db6a2](https://github.com/yujinpan/vitepress/commit/e3db6a2d7c7c9a8ba335167cff7586ec9a2a2416))
+- don't reopen browser on restart when vite.server.open is specified ([6263db1](https://github.com/yujinpan/vitepress/commit/6263db170a658ea887ef4b2bfe4b5239a820e0d9)), closes [#4040](https://github.com/yujinpan/vitepress/issues/4040)
+- multi root element not support in vue2 ([8773f21](https://github.com/yujinpan/vitepress/commit/8773f2193ac97808a59af894587d1e72922b1cd4))
+- **theme/regression:** typo in component props resulting in nested titles not showing in navbar ([01d0d45](https://github.com/yujinpan/vitepress/commit/01d0d45292602cbb7de492f0c953ddb239842116)), closes [#4042](https://github.com/yujinpan/vitepress/issues/4042)
+- **theme:** excerpt style in LocalSearchBox ([#4050](https://github.com/yujinpan/vitepress/issues/4050)) ([2bc0d39](https://github.com/yujinpan/vitepress/commit/2bc0d39d5089841986f0988fc9cfe15533d3a0c6))
+
 # [5.3.0](https://github.com/yujinpan/vitepress/compare/v5.1.0...v5.3.0) (2024-07-11)
 
 ### Bug Fixes
