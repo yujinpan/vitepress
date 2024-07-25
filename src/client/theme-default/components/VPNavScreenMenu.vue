@@ -8,7 +8,7 @@ const { theme } = useData()
 
 <template>
   <nav v-if="theme.nav" class="VPNavScreenMenu">
-    <template v-for="item in theme.nav" :key="JSON.stringify(item)">
+    <template v-for="item in theme.nav">
       <VPNavScreenMenuLink v-if="'link' in item" :item="item" />
       <component
         v-else-if="'component' in item"

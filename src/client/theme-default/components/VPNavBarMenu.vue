@@ -15,7 +15,7 @@ const { theme } = useData()
     <span id="main-nav-aria-label" class="visually-hidden">
       Main Navigation
     </span>
-    <template v-for="item in theme.nav" :key="JSON.stringify(item)">
+    <template v-for="item in theme.nav">
       <VPNavBarMenuLink v-if="'link' in item" :item="item" />
       <component
         v-else-if="'component' in item"
