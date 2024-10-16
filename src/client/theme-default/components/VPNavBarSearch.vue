@@ -11,7 +11,7 @@ import type { DefaultTheme } from '../../shared'
 import { useData } from '../composables/data'
 import VPNavBarSearchButton from './VPNavBarSearchButton.vue'
 
-const VPLocalSearchBox = __VP_LOCAL_SEARCH__
+const VPLocalSearchBox: any = __VP_LOCAL_SEARCH__
   ? defineAsyncComponent(() => import('./VPLocalSearchBox.vue'))
   : () => null
 
