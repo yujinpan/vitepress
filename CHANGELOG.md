@@ -1,3 +1,30 @@
+## [5.4.3](https://github.com/yujinpan/vitepress/compare/v5.3.2...v5.4.3) (2024-10-16)
+
+### Bug Fixes
+
+- `vueRE` conflicting with `lineNoRE` ([#4247](https://github.com/yujinpan/vitepress/issues/4247)) ([2ac64b8](https://github.com/yujinpan/vitepress/commit/2ac64b8d4180f2a7c54fda57df7f3a0a52488d62))
+- broken rewrites on windows ([#4268](https://github.com/yujinpan/vitepress/issues/4268)) ([b46d6d3](https://github.com/yujinpan/vitepress/commit/b46d6d3a204f5ce347647bfd1ab8073bf313afd6))
+- **client:** use `usePreferredDark` with `appearance: "force-auto"` ([#4263](https://github.com/yujinpan/vitepress/issues/4263)) ([3e8fc40](https://github.com/yujinpan/vitepress/commit/3e8fc40c3621da1ef35645d376dab7765b35bb40))
+- **client:** wrong script async check ([461a5b0](https://github.com/yujinpan/vitepress/commit/461a5b001d29f95169f60fe28bc610e3f6e8fd66))
+- hmr not updating page data in rewritten paths and file path is wrong in mdit for dynamic routes ([c46e4b7](https://github.com/yujinpan/vitepress/commit/c46e4b784ddb9ce3bd1cfcc3de1d1d676535cb5b)), closes [#4172](https://github.com/yujinpan/vitepress/issues/4172)
+- multiple cache busting imports causing useData to fail ([2b3e486](https://github.com/yujinpan/vitepress/commit/2b3e486ab913ff77707410b9cee3ba6d256ccc95)), closes [#3820](https://github.com/yujinpan/vitepress/issues/3820) [#3398](https://github.com/yujinpan/vitepress/issues/3398) [#3363](https://github.com/yujinpan/vitepress/issues/3363)
+- reapply [#4260](https://github.com/yujinpan/vitepress/issues/4260) ([b96712c](https://github.com/yujinpan/vitepress/commit/b96712c0744f9ac7ebd65cf4087b2e9fd0d6762b))
+- remove font synthesis in webfont mode, google fonts now support italic axis in inter ([1628918](https://github.com/yujinpan/vitepress/commit/1628918f30b5602b83c51a2a8f4ec5e773cf7445))
+- **theme:** add types for `VPLink`, `VPSocialLink` and `VPSocialLinks` exports ([#4284](https://github.com/yujinpan/vitepress/issues/4284)) ([fcae4d5](https://github.com/yujinpan/vitepress/commit/fcae4d5554df2130b9a7e5ad8e0cc83eccf88bec))
+- **theme:** change the order of CSS rules of `VPFlyout` ([#4225](https://github.com/yujinpan/vitepress/issues/4225)) ([68150a6](https://github.com/yujinpan/vitepress/commit/68150a6f3349c1741ed5683e3010d9ecea02f3a8)), closes [#4224](https://github.com/yujinpan/vitepress/issues/4224)
+- **theme:** improve local search input a11y ([#4066](https://github.com/yujinpan/vitepress/issues/4066)) ([92b92ae](https://github.com/yujinpan/vitepress/commit/92b92aefcab9fbb28b51da70ee8ab21724098277))
+- **theme:** respect custom tag prop in VPButton component ([#4185](https://github.com/yujinpan/vitepress/issues/4185)) ([9c5d348](https://github.com/yujinpan/vitepress/commit/9c5d348c034eb6773562c93cad699d287051aa7b))
+
+### Features
+
+- add `data-title` attribute for code group label tag ([#4152](https://github.com/yujinpan/vitepress/issues/4152)) ([bc7271d](https://github.com/yujinpan/vitepress/commit/bc7271d258047feb8a39c97ebc5e2a16bf899bb5))
+- allow ignoring certain headers and their subtrees completely in outline ([3e11b6a](https://github.com/yujinpan/vitepress/commit/3e11b6abf5fbe80c2bc733f590ab57c7b2cc06f2)), closes [#4171](https://github.com/yujinpan/vitepress/issues/4171)
+- **client:** add `onAfterPageLoad` hook in router ([#4126](https://github.com/yujinpan/vitepress/issues/4126)) ([315c220](https://github.com/yujinpan/vitepress/commit/315c22004993f6f1cbdbb59178e46745d8e505a6))
+- **experimental:** support passing function for rewrites ([#4274](https://github.com/yujinpan/vitepress/issues/4274)) ([8436472](https://github.com/yujinpan/vitepress/commit/8436472c7874cb16caf9432660b395ca9ba68f9d))
+- support adding extra attributes to snippet imports (useful for twoslash) ([#4100](https://github.com/yujinpan/vitepress/issues/4100)) ([e8f7dd1](https://github.com/yujinpan/vitepress/commit/e8f7dd16f6139fdfd129b86caff4b6613dd1e887))
+- **theme:** expose theme default VPLink & VPSocialLink(s) component ([#4178](https://github.com/yujinpan/vitepress/issues/4178)) ([615e33b](https://github.com/yujinpan/vitepress/commit/615e33bb24d5005574af971ffcf1f41d751a855c))
+- trigger `onContentUpdated` on frontmatter-only changes too ([0db269a](https://github.com/yujinpan/vitepress/commit/0db269a4c5d90ecf69f0219982cdf8f335e787ce))
+
 ## [5.3.2](https://github.com/yujinpan/vitepress/compare/v5.3.0...v5.3.2) (2024-07-25)
 
 ### Bug Fixes
