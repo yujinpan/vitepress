@@ -1,4 +1,4 @@
-import { defineComponent, h, computed } from 'vue'
+import { defineComponent, h, computed, watch } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import { contentUpdatedCallbacks } from '../utils'
 
@@ -11,7 +11,8 @@ export const Content = defineComponent({
   },
   setup(props) {
     const route = useRoute()
-    const { site } = useData()
+    const { frontmatter, site } = useData()
+    watch(frontmatter, runCbs, { deep: true, flush: 'post' })
 
     // fix warn: name includes '/'
     const component = computed(() => {
